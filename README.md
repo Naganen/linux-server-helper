@@ -1,16 +1,31 @@
 # Linux Server Helper (Debian Daemon & Windows Modern Tray/Flyout Client)
 
-<img width="681" height="754" alt="image" src="https://github.com/user-attachments/assets/ecf4f16d-31db-4f23-8209-bca6925158f1" />
-<img width="683" height="745" alt="image" src="https://github.com/user-attachments/assets/1ad5669c-e574-4f93-ab20-84dc2725f466" />
-<img width="681" height="749" alt="image" src="https://github.com/user-attachments/assets/5db633bf-1cff-4e0b-b4f9-d9a85329cc7d" />
-<img width="679" height="757" alt="image" src="https://github.com/user-attachments/assets/52beb918-3e1e-406e-8dce-078780d5d833" />
-<img width="685" height="752" alt="image" src="https://github.com/user-attachments/assets/0410b013-5cac-4447-ba8c-3eef7b466167" />
-<img width="686" height="756" alt="image" src="https://github.com/user-attachments/assets/63c2b602-52d0-4ae8-872a-f9af22731490" />
-<img width="475" height="342" alt="image" src="https://github.com/user-attachments/assets/63e6f54b-9332-4626-84a7-47883302c4f9" />
-
 <p align="center">
   <b><a href="#-türkçe">Türkçe</a></b> | <b><a href="#-english">English</a></b>
 </p>
+
+---
+
+## 📸 Ekran Görüntüleri / Screenshots
+
+<div align="center">
+
+| 1. 📊 Özet & Canlı Metrikler (Overview) | 2. ⚡ Süreçler & CPU / Disk (Processes) |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/ecf4f16d-31db-4f23-8209-bca6925158f1" width="400" alt="Overview Tab" /> | <img src="https://github.com/user-attachments/assets/1ad5669c-e574-4f93-ab20-84dc2725f466" width="400" alt="Processes Tab" /> |
+
+| 3. ⚙️ Servis Yönetimi (Services) | 4. 👥 Kullanıcılar & Yetkiler (Users) |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/5db633bf-1cff-4e0b-b4f9-d9a85329cc7d" width="400" alt="Services Tab" /> | <img src="https://github.com/user-attachments/assets/52beb918-3e1e-406e-8dce-078780d5d833" width="400" alt="Users Tab" /> |
+
+| 5. 💻 Uzak Terminal Konsolu (Terminal) | 6. 🌐 Ayarlar & Çoklu Sunucu (Settings) |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/0410b013-5cac-4447-ba8c-3eef7b466167" width="400" alt="Terminal Tab" /> | <img src="https://github.com/user-attachments/assets/63c2b602-52d0-4ae8-872a-f9af22731490" width="400" alt="Settings Tab" /> |
+
+### 7. 🚨 Sağ Alt Köşe Özel Anormallik Uyarı Penceresi (Dedicated Alert Window)
+<img src="https://github.com/user-attachments/assets/63e6f54b-9332-4626-84a7-47883302c4f9" width="480" alt="Dedicated Alert Window" />
+
+</div>
 
 ---
 
@@ -283,7 +298,7 @@ sudo bash install.sh
 6. Automatically opens port `8765/tcp` if UFW firewall is active.
 7. Prints your server's **Local IP**, **Port**, and **API Token** in a formatted banner.
 
-### Service Management Commands:
+### Service Commands:
 ```bash
 # Check service status:
 sudo systemctl status linux-server-helper
@@ -323,7 +338,7 @@ sudo systemctl stop linux-server-helper
 
 ## 📡 3. REST API Reference (cURL & Automation)
 
-You can interact with the Linux Helper daemon directly from scripts or cURL. Pass authentication via `X-API-Key: <TOKEN>`.
+Pass authentication via `X-API-Key: <TOKEN>` or `Authorization: Bearer <TOKEN>`.
 
 ```bash
 # 1. Ping / Health check

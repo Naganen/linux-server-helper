@@ -4,6 +4,33 @@ This project allows you to monitor and manage **Debian Linux** servers via an in
 
 Both the Linux daemon and Windows client are compiled with C++ (C++17), offering near-zero overhead (~3-5 MB RAM on Linux, ~340 KB executable size on Windows) and high native performance.
 
+<p align="center">
+  <b><a href="README.md#-türkçe">Türkçe</a></b> | <b><a href="#linux-server-helper-debian-daemon--windows-modern-trayflyout-client">English</a></b>
+</p>
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+
+| 1. 📊 Overview & Live Metrics | 2. ⚡ Processes & CPU / Disk |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/ecf4f16d-31db-4f23-8209-bca6925158f1" width="400" alt="Overview Tab" /> | <img src="https://github.com/user-attachments/assets/1ad5669c-e574-4f93-ab20-84dc2725f466" width="400" alt="Processes Tab" /> |
+
+| 3. ⚙️ Service Management (systemd) | 4. 👥 Users & Permission Management |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/5db633bf-1cff-4e0b-b4f9-d9a85329cc7d" width="400" alt="Services Tab" /> | <img src="https://github.com/user-attachments/assets/52beb918-3e1e-406e-8dce-078780d5d833" width="400" alt="Users Tab" /> |
+
+| 5. 💻 Remote Command Terminal | 6. 🌐 Multi-Server Settings |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/0410b013-5cac-4447-ba8c-3eef7b466167" width="400" alt="Terminal Tab" /> | <img src="https://github.com/user-attachments/assets/63c2b602-52d0-4ae8-872a-f9af22731490" width="400" alt="Settings Tab" /> |
+
+### 7. 🚨 Bottom-Right Dedicated Anomaly Alert Window
+<img src="https://github.com/user-attachments/assets/63e6f54b-9332-4626-84a7-47883302c4f9" width="480" alt="Dedicated Alert Window" />
+
+</div>
+
 ---
 
 ## 🚀 Key Features & Capabilities
