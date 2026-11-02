@@ -1,0 +1,22 @@
+[Unit]
+Description=Linux Server Helper Background Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/etc/linux-server-helper
+ExecStart=/usr/local/bin/linux-server-helper --config /etc/linux-server-helper/config.json
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+# Security sandbox options
+CapabilityBoundingSet=CAP_KILL CAP_SYS_BOOT CAP_SYS_ADMIN CAP_DAC_OVERRIDE
+AmbientCapabilities=CAP_KILL CAP_SYS_BOOT CAP_SYS_ADMIN CAP_DAC_OVERRIDE
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+

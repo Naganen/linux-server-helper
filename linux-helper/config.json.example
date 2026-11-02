@@ -1,0 +1,7 @@
+{
+    "host": "0.0.0.0",
+    "port": 8765,
+    "api_token": "YOUR_SECRET_TOKEN_HERE",
+    "allow_remote": true
+}
+
